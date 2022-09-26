@@ -1,11 +1,10 @@
-let counterValue = 0;
 const decrButton = document.querySelector(`[data-action='decrement']`);
 const incrButton = document.querySelector(`[data-action='increment']`);
+let counterValue = 0;
 
 counterValue = document.querySelector("#value");
 
 decrButton.addEventListener("click", onClickDecrement);
-
 function onClickDecrement() {
   counterValue.textContent -= 1;
 }
